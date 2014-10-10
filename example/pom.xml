@@ -180,18 +180,6 @@
 							<cargo.remote.uri>${dev.deploy.uri}</cargo.remote.uri>
 						</properties>
 					</configuration>
-					<deployer>
-						<deployables>
-							<deployable>
-								<groupId>org.geomajas.project</groupId>
-								<artifactId>geomajas-project-codemirror-gwt-example</artifactId>
-								<type>war</type>
-								<properties>
-									<context>codemirror-gwt</context>
-								</properties>
-							</deployable>
-						</deployables>
-					</deployer>
 				</configuration>
 			</plugin>
 		</plugins>
