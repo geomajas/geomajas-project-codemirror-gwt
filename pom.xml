@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.geomajas</groupId>
 		<artifactId>geomajas-al-parent</artifactId>
-		<version>2.2.0</version>
+		<version>2.4.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -90,6 +90,6 @@
 	<properties>
 		<codemirror-gwt-version>2.5.0</codemirror-gwt-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<geomajas-build-tools-version>2.0.0</geomajas-build-tools-version>
+		<geomajas-build-tools-version>2.5.0</geomajas-build-tools-version>
 	</properties>
 </project>
