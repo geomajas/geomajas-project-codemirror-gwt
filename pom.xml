@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.geomajas</groupId>
 		<artifactId>geomajas-al-parent</artifactId>
-		<version>2.4.0</version>
+		<version>2.5.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -42,17 +42,21 @@
 
 	<dependencyManagement>
 		<dependencies>
+            <!-- Geomajas dependencies-->
 			<dependency>
 				<groupId>org.geomajas.project</groupId>
 				<artifactId>geomajas-project-api-annotation</artifactId>
-				<version>1.0.0</version>
+				<version>${codemirror-version-geomajas-api}</version>
 			</dependency>
+
+            <!-- project dependencies-->
 			<dependency>
 				<groupId>org.geomajas.project</groupId>
 				<artifactId>geomajas-project-codemirror-gwt</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
+            <!-- GWT dependencies-->
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-user</artifactId>
@@ -68,10 +72,12 @@
 				<artifactId>gwt-servlet</artifactId>
 				<version>${codemirror-gwt-version}</version>
 			</dependency>
+
+            <!-- test dependencies-->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.11</version>
+				<version>${codemirror-version-junit}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -88,8 +94,9 @@
 	</profiles>
 
 	<properties>
-		<codemirror-gwt-version>2.5.0</codemirror-gwt-version>
+		<codemirror-gwt-version>2.7.0</codemirror-gwt-version>
+		<codemirror-version-geomajas-api>1.0.0</codemirror-version-geomajas-api>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<geomajas-build-tools-version>2.5.0</geomajas-build-tools-version>
+		<codemirror-version-junit>4.11</codemirror-version-junit>
 	</properties>
 </project>

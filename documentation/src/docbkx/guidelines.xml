@@ -6,7 +6,7 @@
 	Contributors License Agreement. For full licensing ~ details, see LICENSE.txt 
 	in the project root. -->
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
-<chapter id="chapter-howto">
+<chapter id="chapter-dev">
 	<title>Development guidelines</title>
 
 	<para>Look at the ExampleEntryPoint class in the example project for a
