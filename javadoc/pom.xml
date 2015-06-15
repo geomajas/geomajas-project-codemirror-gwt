@@ -19,7 +19,6 @@
 	</parent>
 
 	<artifactId>geomajas-project-codemirror-javadoc</artifactId>
-	<version>3.13.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Geomajas Project Codemirror: Javadoc</name>
 	<description>Geomajas Project Codemirror: Javadoc</description>

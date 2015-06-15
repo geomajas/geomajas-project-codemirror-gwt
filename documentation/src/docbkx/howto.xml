@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ~ This is part of Geomajas, a GIS framework, http://www.geomajas.org/. 
+	~ ~ Copyright 2008-2015 Geosparc nv, http://www.geosparc.com/, Belgium. ~
+	~ The program is available in open source according to the Apache ~ License, 
+	Version 2.0. All contributions in this program are covered ~ by the Geomajas 
+	Contributors License Agreement. For full licensing ~ details, see LICENSE.txt 
+	in the project root. -->
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+<chapter id="chapter-howto">
+	<title>How to include the project</title>
+
+	<para>The codemirror project can be included as a GWT module. Add dependency in pom.xml:</para>
+
+    <programlisting><![CDATA[<dependency>
+    <groupId>org.geomajas.project</groupId>
+    <artifactId>geomajas-project-codemirror-gwt</artifactId>
+    <version>latestVersion</version>
+</dependency>]]></programlisting>
+
+	<para>In your application .gwt.xml file, include the codemirror module:</para>
+
+    <programlisting><![CDATA[<inherits name='org.geomajas.codemirror.CodeMirror'/>]]></programlisting>
+
+	<para>As from version 3.13.0, GWT 2.7.0 is used. This requires codemirror script files to be included directly into the
+    index.html page of your application. Add this section to the html page, where <code>gwtModuleReference</code>
+    needs to be replaced by your GWT application module's name
+        (e.g. for example project, <code>gwtModuleReference</code> is <code>org.geomajas.codemirror.Example</code>)</para>
+
+    <programlisting><![CDATA[<!-- scripts for codemirror START -->
+<script type="text/javascript" language="javascript" src="gwtModuleReference/lib/codemirror.js"></script>
+<script type="text/javascript" language="javascript" src="gwtModuleReference/mode/xml/xml.js"></script>
+<script type="text/javascript" language="javascript" src="gwtModuleReference/mode/css/css.js"></script>
+<script type="text/javascript" language="javascript" src="gwtModuleReference/mode/htmlmixed/htmlmixed.js"></script>
+<script type="text/javascript" language="javascript" src="gwtModuleReference/addon/edit/closetag.js"></script>
+<script type="text/javascript" language="javascript" src="gwtModuleReference/addon/fold/collapserange.js"></script>
+<!-- scripts for codemirror END -->]]></programlisting>
+    <para>Remark: be sure to include end tags as provided. Do not use <![CDATA[<script.../>]]>, as some browsers will fail on this.</para>
+</chapter>

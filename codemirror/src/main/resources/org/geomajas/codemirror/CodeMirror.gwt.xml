@@ -13,13 +13,15 @@
 	<inherits name='com.google.gwt.user.User' />
 	<inherits name="com.google.gwt.i18n.I18N"/>
 
-	<script src="lib/codemirror.js" />
-	<script src="mode/xml/xml.js" />
-	<script src="mode/css/css.js" />
-    <script src="mode/htmlmixed/htmlmixed.js" />
-
-	<script src="addon/edit/closetag.js" />
-    <script src="addon/fold/collapserange.js" />
+    <!-- include js files below in html page of application-->
+	<!--
+    <script type="text/javascript" language="javascript" src="gwtModuleReference/lib/codemirror.js"></script>
+    <script type="text/javascript" language="javascript" src="gwtModuleReference/mode/xml/xml.js"></script>
+    <script type="text/javascript" language="javascript" src="gwtModuleReference/mode/css/css.js"></script>
+    <script type="text/javascript" language="javascript" src="gwtModuleReference/mode/htmlmixed/htmlmixed.js"></script>
+    <script type="text/javascript" language="javascript" src="gwtModuleReference/addon/edit/closetag.js"></script>
+    <script type="text/javascript" language="javascript" src="gwtModuleReference/addon/fold/collapserange.js"></script>
+    -->
 
 	<stylesheet src="lib/codemirror.css" />
 	<stylesheet src="codemirrorCustom.css" />
