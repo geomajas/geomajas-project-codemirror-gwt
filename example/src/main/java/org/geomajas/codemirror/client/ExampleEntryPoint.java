@@ -24,6 +24,8 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
  */
 public class ExampleEntryPoint implements EntryPoint {
 
+	private final String geomajasCodemirrorGwtDocumentatonUrl = "http://www.geomajas.org/codemirror-gwt";
+
 	public void onModuleLoad() {
 		// -- show some background
 		String contents = 
@@ -38,8 +40,9 @@ public class ExampleEntryPoint implements EntryPoint {
 		// -- show a codemirror panel
 		String initialContent = 
 			"<html>\n\t<head>\n\t\t<title>Geomajas GWT Codemirror wrapper sample</title>\n\t</head>\n" +
-			"\n\t<body>\n\t\tRead more here: <a href=\"http://www.geomajas.org/documentation/main\">" +
-			"Geomajas</a><br />\n\t\tand here: <a href=\"http://codemirror.net/\">CodeMirror</a><br />\n\t" +
+			"\n\t<body>\n\t\tRead more here: \n\t\t<a href=\"" + geomajasCodemirrorGwtDocumentatonUrl + "\">" +
+			"Geomajas Codemirror GWT</a><br />" +
+					"\n\t\tand here: <a href=\"http://codemirror.net/\">CodeMirror</a><br />\n\t" +
 			"</body>\n</html>";
 
 		final PopupPanel popup = new PopupPanel(false);
